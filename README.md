@@ -38,9 +38,9 @@ Dự án được phát triển nhằm áp dụng kiến thức môn **SOF2043 �
 ## 🖼️ Giao Diện Minh Họa
 | Trang | Hình ảnh |
 |------|-----------|
-| Giao diện chính | ![](screenshots/main.png) |
-| Quản lý sản phẩm | ![](screenshots/product.png) |
-| Hóa đơn | ![](screenshots/invoice.png) |
+| Giao diện chính | ![](https://i.imgur.com/H7a8kRS.png) |
+| Quản lý sản phẩm | ![](https://i.imgur.com/DU8Xvu1.png) |
+| Hóa đơn | ![](https://i.imgur.com/fiDXcW2.png) |
 
 ---
 
