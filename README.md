@@ -45,33 +45,7 @@ Dự án được phát triển nhằm áp dụng kiến thức môn **SOF2043 �
 ---
 
 ## 📁 Cấu Trúc Thư Mục
-Project/
-├── src/
-│   ├── dao/                  # Giao diện DAO và triển khai DAO
-│   │   ├── BillDAO.java
-│   │   ├── BillDAOImpl.java
-│   │   └── ...
-│   ├── model/                # Các lớp thực thể (entity)
-│   │   ├── Bill.java
-│   │   ├── User.java
-│   │   └── ...
-│   ├── view/                 # Giao diện người dùng (UI + Dialogs)
-│   │   ├── LoginJDialog.java
-│   │   ├── DrinkJDialog.java
-│   │   └── ...
-│   ├── controller/           # Bộ điều khiển (Controller cho view)
-│   │   ├── LoginController.java
-│   │   ├── BillController.java
-│   │   └── ...
-│   └── utils/                # Các lớp tiện ích dùng chung
-│       ├── XJdbc.java
-│       ├── XDate.java
-│       └── ...
-├── lib/                      # Thư viện bên ngoài
-│   └── mysql-connector-java.jar
-├── database/                 # Tập tin khởi tạo CSDL
-│   └── polycafe.sql
-└── README.md                 # Mô tả dự án
+<pre>Project/ ├── src/ │ ├── dao/ # Giao diện DAO và triển khai DAO │ │ ├── BillDAO.java │ │ ├── BillDAOImpl.java │ │ └── ... │ ├── model/ # Các lớp thực thể (entity) │ │ ├── Bill.java │ │ ├── User.java │ │ └── ... │ ├── view/ # Giao diện người dùng (UI + Hộp thoại) │ │ ├── LoginJDialog.java │ │ ├── DrinkJDialog.java │ │ └── ... │ ├── controller/ # Bộ điều khiển (Controller cho view) │ │ ├── LoginController.java │ │ ├── BillController.java │ │ └── ... │ └── utils/ # Các lớp tiện ích dùng chung │ ├── XJdbc.java │ ├── XDate.java │ └── ... ├── lib/ # Thư viện bên ngoài │ └── mysql-connector-java.jar ├── database/ # Tập tin khởi tạo cơ sở dữ liệu │ └── polycafe.sql └── README.md # Mô tả dự án</pre>
 
 ---
 
