@@ -47,16 +47,31 @@ Dự án được phát triển nhằm áp dụng kiến thức môn **SOF2043 �
 ## 📁 Cấu Trúc Thư Mục
 Project/
 ├── src/
-│ ├── dao/
-│ ├── model/
-│ ├── view/
-│ ├── controller/
-│ └── utils/
-├── lib/
-│ └── mysql-connector-java.jar
-├── database/
-│ └── polycafe.sql
-└── README.md
+│   ├── dao/                  # Giao diện DAO và triển khai DAO
+│   │   ├── BillDAO.java
+│   │   ├── BillDAOImpl.java
+│   │   └── ...
+│   ├── model/                # Các lớp thực thể (entity)
+│   │   ├── Bill.java
+│   │   ├── User.java
+│   │   └── ...
+│   ├── view/                 # Giao diện người dùng (UI + Dialogs)
+│   │   ├── LoginJDialog.java
+│   │   ├── DrinkJDialog.java
+│   │   └── ...
+│   ├── controller/           # Bộ điều khiển (Controller cho view)
+│   │   ├── LoginController.java
+│   │   ├── BillController.java
+│   │   └── ...
+│   └── utils/                # Các lớp tiện ích dùng chung
+│       ├── XJdbc.java
+│       ├── XDate.java
+│       └── ...
+├── lib/                      # Thư viện bên ngoài
+│   └── mysql-connector-java.jar
+├── database/                 # Tập tin khởi tạo CSDL
+│   └── polycafe.sql
+└── README.md                 # Mô tả dự án
 
 ---
 
@@ -65,18 +80,19 @@ Project/
 - Tạo database: `banhang`
 - Import file `database/polycafe.sql` vào SQL Sever
 
-### Bước 2: Cấu Hình `DBConnection.java`
+### Bước 2: Cấu Hình `Xjdbc.java`
 ```java
-private static final String URL = "jdbc:mysql://localhost:3306/banhang";
-private static final String USER = "root";
-private static final String PASSWORD = "your_password";
+var driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+var dburl = "jdbc:sqlserver://localhost;database="";encrypt=true;trustServerCertificate=true;";
+var username = "sa";
+var password = "your_password";
 ```
 
 
 ### Bước 3: Chạy Ứng Dụng
-Mở file Main.java và nhấn Run
+Mở file Polycafe.java và nhấn Run
 
-Yêu cầu: Java 8+ và MySQL đã cài đặt
+Yêu cầu: Java 8+ và SQL Sever đã cài đặt
 
 ✅ Đánh Giá Cá Nhân
 Trong quá trình làm đồ án, em đã học được cách xây dựng ứng dụng desktop hoàn chỉnh bằng Java Swing, cách chia lớp theo mô hình MVC, xử lý sự kiện trong giao diện, và thao tác với CSDL bằng JDBC. Em cảm thấy tự tin hơn trong việc xây dựng ứng dụng thực tế.
