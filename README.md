@@ -1,16 +1,17 @@
-# 💻 Dự Án Java Swing - SOF2043
+# 💻 Dự Án Mẫu - SOF2043
 
 ## 👨‍🎓 Thông Tin Sinh Viên
-- **Họ tên:** Nguyễn Văn A  
-- **MSSV:** HE150001  
-- **Lớp:** SD18301  
-- **Giảng viên hướng dẫn:** Thầy Nguyễn Văn B
+- **Họ tên:** Huỳnh Thanh Phong
+- **Codename:** phonghuynh
+- **MSSV:** PS44477  
+- **Lớp:** SD20301  
+- **Giảng viên hướng dẫn:** Huỳnh Khắc Duy
 
 ---
 
 ## 📝 Giới Thiệu Dự Án
 **Tên dự án:** Ứng Dụng Quản Lý Bán Hàng (Desktop)  
-Dự án được phát triển nhằm áp dụng kiến thức môn **SOF2043 – Java Desktop (Java Swing)**, sử dụng giao diện đồ họa Swing kết hợp với JDBC để thao tác dữ liệu từ cơ sở dữ liệu MySQL.
+Dự án được phát triển nhằm áp dụng kiến thức môn **SOF2043 – Java Desktop (Java Swing)**, sử dụng giao diện đồ họa Swing kết hợp với JDBC để thao tác dữ liệu từ cơ sở dữ liệu SQL Sever.
 
 ---
 
@@ -18,19 +19,18 @@ Dự án được phát triển nhằm áp dụng kiến thức môn **SOF2043 �
 | Công nghệ       | Mô tả |
 |------------------|------|
 | Java Swing       | Xây dựng giao diện người dùng (UI) |
-| JDBC             | Kết nối và thao tác với MySQL |
-| MySQL            | Lưu trữ dữ liệu |
+| JDBC             | Kết nối và thao tác với SQL Sever |
+| SQL Sever            | Lưu trữ dữ liệu |
 | Maven (tùy chọn) | Quản lý thư viện và cấu trúc dự án |
 | MVC Pattern      | Mô hình kiến trúc phần mềm rõ ràng |
 
 ---
 
 ## 🔧 Tính Năng Chính
-- ✅ Đăng nhập/Đăng xuất người dùng
+- ✅ Đăng nhập, đổi mật khẩu
 - ✅ Quản lý sản phẩm (Thêm, sửa, xóa, tìm kiếm)
-- ✅ Quản lý khách hàng
-- ✅ Tạo hóa đơn và thống kê doanh thu
-- ✅ Tìm kiếm theo từ khóa
+- ✅ Bán hàng, lịch sử, doanh thu
+- ✅ Giao diện Quản lý và Nhân viên
 - ✅ Giao diện thân thiện với người dùng (sử dụng JTable, JComboBox, JDateChooser...)
 
 ---
@@ -70,7 +70,10 @@ Project/
 private static final String URL = "jdbc:mysql://localhost:3306/banhang";
 private static final String USER = "root";
 private static final String PASSWORD = "your_password";
-Bước 3: Chạy Ứng Dụng
+```
+
+
+### Bước 3: Chạy Ứng Dụng
 Mở file Main.java và nhấn Run
 
 Yêu cầu: Java 8+ và MySQL đã cài đặt
