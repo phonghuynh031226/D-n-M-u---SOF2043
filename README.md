@@ -55,7 +55,7 @@ Project/
 ├── lib/
 │ └── mysql-connector-java.jar
 ├── database/
-│ └── banhang.sql
+│ └── polycafe.sql
 └── README.md
 
 ---
@@ -63,7 +63,7 @@ Project/
 ## 🛠️ Hướng Dẫn Cài Đặt & Chạy
 ### Bước 1: Chuẩn Bị Cơ Sở Dữ Liệu
 - Tạo database: `banhang`
-- Import file `database/banhang.sql` vào MySQL
+- Import file `database/polycafe.sql` vào SQL Sever
 
 ### Bước 2: Cấu Hình `DBConnection.java`
 ```java
